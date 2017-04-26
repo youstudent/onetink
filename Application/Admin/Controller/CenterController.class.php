@@ -16,7 +16,7 @@ class CenterController extends  AdminController
     //列表展示页面
     public function index(){
         //>> 1 获取数据
-        $rows= M('Center')->select();
+       $rows = $this->lists('Center');
         //>> 2 分配数据
         $this->assign('rows',$rows);
         //>> 3 选择视图
